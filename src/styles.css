@@ -1,0 +1,119 @@
+:root {
+  --primary: #12eb00;
+  --secondary: #94ff03;
+  --white: #fafafa;
+  --white-dark: #e5e5e5;
+  --black: #333333;
+  --gray: #999999;
+  --red: #ff0000;
+  --yellow: #f0e000;
+  --bs-default: 0px 5px 29px -12px rgba(35, 31, 32, 0.25);
+  --bs-full-default: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.fc-daygrid-event {
+  white-space: break-spaces;
+}
+
+.fc-h-event .fc-event-main {
+  color: var(--black);
+}
+
+.fc-h-event {
+  background: unset;
+  border: unset;
+}
+
+.fc .fc-scrollgrid {
+  border: unset;
+}
+
+.fc,
+.fc *,
+.fc :after,
+.fc :before {
+  border-radius: 0.25rem;
+  z-index: 0;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 1rem;
+}
+
+.fc-toolbar-title {
+  font-family: "Futura PT", sans-serif;
+  font-weight: 500;
+}
+
+.fc-theme-standard td {
+  cursor: pointer;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  background: unset;
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border: 1px solid var(--white-dark);
+}
+
+.fc .fc-daygrid-event-harness {
+  box-shadow: var(--bs-default);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.fc .fc-col-header-cell-cushion {
+  margin: 0;
+  font-weight: 600;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.fc .fc-daygrid-day-number {
+  margin: 0;
+}
+
+.fc .fc-scrollgrid-liquid {
+  border-radius: 0.5rem;
+}
+
+.fc-button {
+  background: none;
+  outline: none;
+  border: none;
+  transition: opacity 200ms ease-in-out;
+  transition: border-radius 200ms ease-in-out;
+  border-radius: 1rem 0 1rem 0;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  width: fit-content;
+  font-family: "Futura PT", sans-serif;
+}
+
+.fc-today-button {
+  border-radius: 0.25rem;
+}
+
+.fc-button-primary {
+  color: var(--white);
+  background-image: linear-gradient(
+    to right bottom,
+    #94ff03,
+    #7ffa00,
+    #67f500,
+    #49f000,
+    #12eb00
+  );
+}
+
+.fc-button-primary:focus {
+  box-shadow: unset !important;
+  border: unset !important;
+  outline: unset !important;
+  border: unset !important;
+}
